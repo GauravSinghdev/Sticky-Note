@@ -82,5 +82,5 @@ body{
     text-align: center;
     font-weight: semibold;
     margin-top: 15px;
-    
+    text-wrap: break-word;
 }
