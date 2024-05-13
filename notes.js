@@ -32,9 +32,11 @@ btn1.addEventListener("click", () => {
     const d = document.createElement("div");
 
     d.className = "note";
-    d.innerHTML = `<p class="float:right">${day}</p>
+    d.innerHTML = `<div class="new-div">
+                    <p class="float:right">${day}</p>
                     <p class="date">${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}</p>
-                    <p class="note-p">${txt}</p>`
+                    <p class="note-p">${txt}</p>
+                    </div>`
 
     d.style.backgroundColor = generateColor();
 

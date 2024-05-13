@@ -65,7 +65,7 @@ body{
     width: 300px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    text-wrap: break-word;
+    
 }
 
 .notes{
@@ -81,4 +81,9 @@ body{
     text-align: center;
     font-weight: semibold;
     margin-top: 15px;
+}
+
+
+.new-div{
+    word-wrap: break-word;
 }
