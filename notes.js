@@ -1,6 +1,8 @@
 const btn1 = document.querySelector(".btn");
 const txt = document.querySelector(".txt");
 
+txt.focus();
+
 const generateColor = () => {
     const arr = ['A', 'B', 'C', 'D', 'E', 'F', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
