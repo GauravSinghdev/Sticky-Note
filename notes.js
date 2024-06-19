@@ -1,4 +1,5 @@
 const btn1 = document.querySelector(".btn");
+const txt = document.querySelector(".txt");
 
 const generateColor = () => {
     const arr = ['A', 'B', 'C', 'D', 'E', 'F', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -15,10 +16,11 @@ const generateColor = () => {
 }
 
 
-btn1.addEventListener("click", () => {
 
+const action = () => {
+
+    console.log("Clicked");
     const txt = document.querySelector(".txt").value;
-
 
     if(txt === "")
     {
@@ -43,4 +45,13 @@ btn1.addEventListener("click", () => {
     document.querySelector(".notes").appendChild(d);
 
     document.querySelector(".txt").value = "";
-})
+}
+
+btn1.addEventListener("click", action);
+
+txt.addEventListener("keydown", (event) => {
+    // Check if the pressed key is 'Enter'
+    if (event.key === "Enter" || event.keyCode === 13) {
+        action(); // Call your function
+    }
+});
